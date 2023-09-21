@@ -18,11 +18,13 @@ shared_scripts {
 
 client_script {
     'client/client.lua',
+    'client/client_shop.lua',
 }
 
 server_script {
     '@oxmysql/lib/MySQL.lua',
-    'server/server.lua'
+    'server/server.lua',
+    'server/server_shop.lua'
 }
 
 dependencies {

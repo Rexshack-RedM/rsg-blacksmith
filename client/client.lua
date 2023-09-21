@@ -14,9 +14,9 @@ Citizen.CreateThread(function()
         })
         if v.showblip == true then
             local CraftMenuBlip = Citizen.InvokeNative(0x554D9D53F696D002, 1664425300, v.coords)
-            SetBlipSprite(CraftMenuBlip,  joaat(Config.Blip.blipSprite), true)
-            SetBlipScale(Config.Blip.blipScale, 0.2)
-            Citizen.InvokeNative(0x9CB1A1623062F402, CraftMenuBlip, Config.Blip.blipName)
+            SetBlipSprite(CraftMenuBlip,  joaat(Config.BlacksmithBlip.blipSprite), true)
+            SetBlipScale(Config.BlacksmithBlip.blipScale, 0.2)
+            Citizen.InvokeNative(0x9CB1A1623062F402, CraftMenuBlip, Config.BlacksmithBlip.blipName)
         end
     end
 end)

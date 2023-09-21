@@ -1,9 +1,16 @@
 Config = {}
 
--- blip settings
-Config.Blip = {
-    blipName = 'Blacksmith Shop', -- Config.Blip.blipName
+-- blacksmith blip settings
+Config.BlacksmithBlip = {
+    blipName = 'Blacksmith Crafting', -- Config.Blip.blipName
     blipSprite = 'blip_shop_blacksmith', -- Config.Blip.blipSprite
+    blipScale = 0.2 -- Config.Blip.blipScale
+}
+
+-- blacksmith shop blip settings
+Config.ShopBlip = {
+    blipName = 'Blacksmith Shop', -- Config.Blip.blipName
+    blipSprite = 'blip_shop_store', -- Config.Blip.blipSprite
     blipScale = 0.2 -- Config.Blip.blipScale
 }
 
@@ -26,6 +33,20 @@ Config.BlacksmithCraftingPoint = {
 	
 }
 
+-- blacksmith shops
+Config.BlacksmithShops = {
+
+    {
+        shopid = 'valblacksmithshop',
+        shopname = 'Valentine Blacksmith Shop',
+        coords = vector3(-363.9674, 795.75189, 116.19718),
+        jobaccess = 'valblacksmith',
+        showblip = true
+    },
+    
+}
+
+-- blacksmith crafting
 Config.BlacksmithCrafting = {
 
     {
