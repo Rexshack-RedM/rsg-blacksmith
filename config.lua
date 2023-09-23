@@ -39,7 +39,7 @@ Config.BlacksmithShops = {
     {
         shopid = 'valblacksmithshop',
         shopname = 'Valentine Blacksmith Shop',
-        coords = vector3(-363.9674, 795.75189, 116.19718),
+        coords = vector3(-364.1691, 799.62487, 116.25514),
         jobaccess = 'valblacksmith',
         showblip = true
     },
