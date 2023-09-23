@@ -61,5 +61,17 @@ Config.BlacksmithCrafting = {
         receive = "shovel",
         giveamount = 1
     },
+    {
+        title =  'Knife',
+        category = 'Melee',
+        crafttime = 30000,
+        icon = 'fa-solid fa-screwdriver-wrench',
+        ingredients = { 
+            [1] = { item = "steel", amount = 1 },
+            [2] = { item = "wood",  amount = 1 },
+        },
+        receive = "weapon_melee_knife",
+        giveamount = 1
+    },
 
 }
