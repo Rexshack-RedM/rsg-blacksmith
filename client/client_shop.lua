@@ -198,17 +198,11 @@ RegisterNetEvent('rsg-blacksmithshop:client:InvReFillInput', function(data)
         return
     end
     
-    RSGCore.Functions.TriggerCallback('rsg-blacksmithshop:server:Stock', function(result)
-        for k, v in pairs(result) do
-            if result[k].stock >= tonumber(input[1]) and tonumber(input[2]) ~= nil then
-                --print(currentblacksmithshop, item, input[1], tonumber(input[2]))
-                TriggerServerEvent('rsg-blacksmithshop:server:InvReFill', currentblacksmithshop, item, input[1], tonumber(input[2]), currentjob)
-            else
-                RSGCore.Functions.Notify(Lang:t('lang_s19'), 'error')
-            end
-            return
-        end
-    end, currentjob)
+    if stock >= tonumber(input[1]) and tonumber(input[2]) ~= nil then
+        TriggerServerEvent('rsg-blacksmithshop:server:InvReFill', currentblacksmithshop, item, input[1], tonumber(input[2]), currentjob)
+    else
+        RSGCore.Functions.Notify(Lang:t('lang_s19'), 'error')
+    end
 end)
 
 -------------------------------------------------------------------------------------------
