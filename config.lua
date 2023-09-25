@@ -63,6 +63,30 @@ Config.BlacksmithCrafting = {
         giveamount = 1
     },
     {
+        title =  'Axe',
+        category = 'Tools',
+        crafttime = 30000,
+        icon = 'fa-solid fa-screwdriver-wrench',
+        ingredients = { 
+            [1] = { item = "steel", amount = 1 },
+            [2] = { item = "wood",  amount = 1 },
+        },
+        receive = "axe",
+        giveamount = 1
+    },
+    {
+        title =  'Pickaxe',
+        category = 'Tools',
+        crafttime = 30000,
+        icon = 'fa-solid fa-screwdriver-wrench',
+        ingredients = { 
+            [1] = { item = "steel", amount = 1 },
+            [2] = { item = "wood",  amount = 1 },
+        },
+        receive = "pickaxe",
+        giveamount = 1
+    },
+    {
         title =  'Gold Pan',
         category = 'Tools',
         crafttime = 30000,
