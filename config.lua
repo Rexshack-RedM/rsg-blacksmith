@@ -49,6 +49,7 @@ Config.BlacksmithShops = {
 -- blacksmith crafting
 Config.BlacksmithCrafting = {
 
+    -- tools
     {
         title =  'Shovel',
         category = 'Tools',
@@ -61,6 +62,19 @@ Config.BlacksmithCrafting = {
         receive = "shovel",
         giveamount = 1
     },
+    {
+        title =  'Gold Pan',
+        category = 'Tools',
+        crafttime = 30000,
+        icon = 'fa-solid fa-screwdriver-wrench',
+        ingredients = { 
+            [1] = { item = "steel", amount = 3 },
+        },
+        receive = "goldpan",
+        giveamount = 1
+    },
+
+    -- melee
     {
         title =  'Knife',
         category = 'Melee',
