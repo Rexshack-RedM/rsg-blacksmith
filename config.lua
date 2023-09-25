@@ -30,7 +30,7 @@ Config.BlacksmithCraftingPoint = {
         job = 'valblacksmith',
         showblip = true
     },
-	
+    
 }
 
 -- blacksmith shops
@@ -58,6 +58,7 @@ Config.BlacksmithCrafting = {
         ingredients = { 
             [1] = { item = "steel", amount = 1 },
             [2] = { item = "wood",  amount = 1 },
+            [3] = { item = "coal",  amount = 1 },
         },
         receive = "shovel",
         giveamount = 1
@@ -70,6 +71,7 @@ Config.BlacksmithCrafting = {
         ingredients = { 
             [1] = { item = "steel", amount = 1 },
             [2] = { item = "wood",  amount = 1 },
+            [3] = { item = "coal",  amount = 1 },
         },
         receive = "axe",
         giveamount = 1
@@ -82,6 +84,7 @@ Config.BlacksmithCrafting = {
         ingredients = { 
             [1] = { item = "steel", amount = 1 },
             [2] = { item = "wood",  amount = 1 },
+            [3] = { item = "coal",  amount = 1 },
         },
         receive = "pickaxe",
         giveamount = 1
@@ -93,6 +96,7 @@ Config.BlacksmithCrafting = {
         icon = 'fa-solid fa-screwdriver-wrench',
         ingredients = { 
             [1] = { item = "steel", amount = 3 },
+            [2] = { item = "coal",  amount = 1 },
         },
         receive = "goldpan",
         giveamount = 1
@@ -107,6 +111,7 @@ Config.BlacksmithCrafting = {
         ingredients = { 
             [1] = { item = "steel", amount = 1 },
             [2] = { item = "wood",  amount = 1 },
+            [3] = { item = "coal",  amount = 1 },
         },
         receive = "weapon_melee_knife",
         giveamount = 1
