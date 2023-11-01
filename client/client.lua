@@ -73,17 +73,18 @@ local CategoryMenus = {}
 -- iterate through recipes and organize them by category
 for _, v in ipairs(Config.BlacksmithCrafting) do
     local IngredientsMetadata = {}
-
+    local setheader = RSGCore.Shared.Items[tostring(v.receive)].label
+    local itemimg = "nui://"..Config.img..RSGCore.Shared.Items[tostring(v.receive)].image
     for i, ingredient in ipairs(v.ingredients) do
         table.insert(IngredientsMetadata, { label = RSGCore.Shared.Items[ingredient.item].label, value = ingredient.amount })
     end
     local option = {
-        title = v.title,
-        icon = v.icon,
+        title = setheader,
+        icon = itemimg,
         event = 'rsg-blacksmith:client:checkingredients',
         metadata = IngredientsMetadata,
         args = {
-            title = v.title,
+            title = setheader,
             category = v.category,
             ingredients = v.ingredients,
             crafttime = v.crafttime,
